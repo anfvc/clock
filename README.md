@@ -14,3 +14,5 @@ npm install -g sass
 ```
 sass --watch input.scss output.css
 ```
+
+PS: the project is tied to limited responsiveness.
