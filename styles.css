@@ -3,6 +3,57 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100dvh;
+  background-color: rgb(77, 72, 72);
+}
+
+.clock {
+  min-width: 10rem;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  border: 0.8rem solid black;
+  background-color: white;
+  position: absolute;
+}
+
+#seconds-stick {
+  width: 0.2rem;
+  height: 10.5rem;
+  background-color: red;
+  position: absolute;
+  left: 12.5rem;
+  bottom: 12.5rem;
+  transform-origin: 0 100%;
+}
+
+#minutes-stick {
+  width: 0.3rem;
+  height: 9.5rem;
+  background-color: rgb(68, 68, 68);
+  position: absolute;
+  left: 12.5rem;
+  bottom: 12.5rem;
+  transform-origin: 0 100%;
+}
+
+#hours-stick {
+  width: 0.4rem;
+  height: 8rem;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  left: 12.5rem;
+  bottom: 12.5rem;
+  transform-origin: 0 100%;
+}
+
+#core {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 12rem;
+  left: 12rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
