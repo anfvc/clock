@@ -17,15 +17,17 @@ const getTime = () => {
   //360/60 = 6
   const timeInterval = 6;
 
-  secondsStick.style.transform = `rotate(${seconds * timeInterval}deg)`
+  secondsStick.style.transform = `rotate(${seconds * timeInterval}deg)`;
 
-  minutesStick.style.transform = `rotate(${minutes * timeInterval + seconds/10}deg)`
+  minutesStick.style.transform = `rotate(${
+    minutes * timeInterval + seconds / 10
+  }deg)`;
 
-  hoursStick.style.transform = `rotate(${hours * 30 /* 360deg/12hours */+ minutes/2}deg)`
+  hoursStick.style.transform = `rotate(${
+    hours * 30 /* 360deg/12hours */ + minutes / 2
+  }deg)`;
 };
-
-getTime();
 
 //* The seconds stick is only upating on page refresh. To avoid this, setInterval should come in handy:
 
-setInterval(getTime, 100)
+setInterval(getTime, 100);
