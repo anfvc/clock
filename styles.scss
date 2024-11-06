@@ -2,6 +2,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   min-height: 100dvh;
   background-color: rgb(77, 72, 72);
 
@@ -53,5 +54,12 @@ body {
       top: 12rem;
       left: 12rem;
     }
+  }
+
+  h1 {
+    color: black;
+    background-color: red;
+    font-size: 2rem;
+    text-align: center;
   }
 }

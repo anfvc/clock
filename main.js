@@ -1,12 +1,15 @@
 const secondsStick = document.getElementById("seconds-stick");
 const minutesStick = document.getElementById("minutes-stick");
 const hoursStick = document.getElementById("hours-stick");
+const timeInText = document.querySelector(".time");
 
 const getTime = () => {
   const rightNow = new Date();
   const seconds = rightNow.getSeconds();
   const minutes = rightNow.getMinutes();
   const hours = rightNow.getHours();
+
+  timeInText.innerText = `${hours}:${minutes}:${seconds}`
 
   // How should the movement of the seconds stick be?
   // 360deg in a circle and 60 secs in a minute
@@ -26,6 +29,9 @@ const getTime = () => {
   hoursStick.style.transform = `rotate(${
     hours * 30 /* 360deg/12hours */ + minutes / 2
   }deg)`;
+
+
+
 };
 
 //* The seconds stick is only upating on page refresh. To avoid this, setInterval should come in handy:
