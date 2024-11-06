@@ -16,3 +16,6 @@ sass --watch input.scss output.css
 ```
 
 PS: the project is tied to limited responsiveness.
+
+## Demo
+To see the demo, click [here](https://anfvc.github.io/clock/)
